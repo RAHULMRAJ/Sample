@@ -1,65 +1,34 @@
-*{
-    margin: 0px;
-    padding: 0px;
+*{ margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body{
+        background: #000;
+        color: #fff;
+    }
+   
 
 
-}
-.container-fluid{position: relative;
-    height: 100vh;
-    background-image: url(netflix.jpg);
-    padding-top: 15%;
-    align-items: center;
-    justify-content: center;
-    
-
-
-}
-.container-fluid::before{
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
+.header{
     width: 100%;
-    height: 100%;
-    background-color: rgba(0,0, 0, 0.7);
-}
-.container h1,img{
+    height: 150vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(netflix.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8% ;
     position: relative;
-    z-index: 1;
-    color: white;
-    font-size:350%;
-    font-weight:1000;
-    text-align: center;
-
-}
-.container h6{
-    position: relative;
-    z-index: 1;
-    font-size: 100%;
-    color: white;
-    font-size:larger ;
-    font-weight:normal;
-    text-align: center;
-
-}
-h6.a{
-    font-size:medium;
-}
-.navbar{
-    position:absolute;
-    top: 5%;
-    
+  
 }
 nav{display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    
 
 }
 .logo{
-    width: 15%;
+    width: 18%;
     cursor: pointer;
 }
 nav button{
@@ -69,15 +38,13 @@ nav button{
     color: white;
     padding: 7px 20px;
     font-size: 13px;
-    font-weight: bold;
     border-radius: 4px;
-    margin: 35px;
+    margin: 10px;
     cursor: pointer;
-    
+   
 }
-.container form{
+ form{
     position: relative;
-   z-index: 1;
     
     font-size:180%;
     font-weight:100;
@@ -87,29 +54,58 @@ nav button{
 }
 
     
-.email-signup input{
-    width: 40%;
-    padding: 5px;
-    background: transparent;
+
+
+
+
+
+
+.header-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50px);
+    text-align: center;
+    margin-top: 100px;
     color: #fff;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
 
 }
 
 
-.email-signup button{
-    background: #db0001;
-    bottom: 0;
-    font-size: 20px;
-    font-weight: bold;
+  
+  .form button{
+    width: 170px;
+    height: 70px;
+    background-color:red ;
+    color: #fff;
+    font-weight: bolder;
+    font-size:20px;
     cursor: pointer;
-    color: #fff;
-    border-radius: 5px;
-    padding: 15px 30px;
+    
+  }
+  .form input{
+    width: 432px;
+    height: 100%;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+  }
 
-}
 .trend h1{
     color: #fff;
-    margin-right: 80%;
+    margin-left:7%;
     font-size:x-large;
     font-weight:bold
     
@@ -206,16 +202,59 @@ input[type="radio"]{
   .accord input[type="radio"]:checked +label ::after{
     transform: rotate(135deg);
   }
-  .bottom form{
-    position: relative;
-   z-index: 1;
-    
-    font-size:180%;
-    font-weight:100;
-    text-align: center;
+  .faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
     
 
 }
+.faq .p{font-size: 13px;
+    text-align: center;
+
+}
+.footer{
+    padding: 50px 15px 10px;
+    border-top:6px solid #333;
+    color: #777;
+
+}
+.footer h6{
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 30px;
+    padding-left: 11%;
+
+
+
+}
+.footer .col-md-3{
+
+    margin-bottom: 20px;
+}
+.footer .col-md-3 a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    margin-bottom: 10px;
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+    margin-left: 10%;
+}
+.cr{margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 11%;
+    color: #777;
+    
+
+}
+
+
+
 
  
     
