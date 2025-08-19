@@ -105,10 +105,37 @@ nav button{
 
 .trend h1{
     color: #fff;
-    margin-left:7%;
+    margin-left:10%;
     font-size:x-large;
     font-weight:bold
     
+}
+
+.trend .wrap{
+    max-height: 300px;
+    max-width: 80%;
+    border: 1px solid;
+    display: flex;
+    overflow-x:auto;
+    overflow-y: hidden;
+
+    white-space: nowrap;
+    margin-left: 12%;
+
+
+}
+
+    
+
+
+.trend .wrap .box{
+    min-width: 200px;
+    height: 300px;
+    line-height: 200px;
+    text-align: center;
+    background-color: #777;
+    margin-right: 10px;
+
 }
 .reason h1{
     color: #fff;
@@ -124,7 +151,9 @@ nav button{
     width: 250px;
     padding-left: 40px;
     padding-top: 25px;
+    text-align: center;
     padding-bottom: 90px;
+    
 
     
     
@@ -252,6 +281,73 @@ input[type="radio"]{
     
 
 }
+@media only screen and (max-width:700px){
+.logo{
+    width: 100px;
+}
+.nav button{
+    padding: 5px 10px;
+}
+.header-content{
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+}
+.header-content h1{
+    font-size: 40px;
+
+
+
+}
+.header-content h3{
+    font-size: 200;
+}
+.row button{
+
+    font-size: 15px;
+    padding: 10px 15px;
+    width:140px ;
+    height: 55px;
+    
+
+}
+.row  input{
+    height: 50px;
+    width: 390px;
+}
+.card{
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 90px;}
+
+    .reason-card{
+        height: 220px;
+        border-radius: 30px;
+        margin-left:75px;
+        
+
+    }
+
+    .accord{
+    margin: 60px auto;
+    width: 75%;
+    max-width: 750px;}
+
+    .reason h1{
+        font-size:16.5px ;
+        font-weight: bolder;
+        
+    }
+    .trend h1{
+        font-size: larger;
+    }
+
+}
+    
+
 
 
 
